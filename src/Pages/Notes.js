@@ -18,7 +18,11 @@ export default function Notes() {
     useEffect(() => {
         const getData = async () => {
             let response = await axios.get('https://rs-keepbackend.onrender.com', {headers: {Authorization: localStorage.getItem('token')}});
+            console.log(response);
             if (response.status === 200) {
+                if (response.data.notes === undefined) {
+                    return;
+                }
                 addItem(response.data.notes);
             } else {
                 alert("Server is down, Please try again later!");
