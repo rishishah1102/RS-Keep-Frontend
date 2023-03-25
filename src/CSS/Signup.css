@@ -1,0 +1,124 @@
+.signup {
+    background-color: #13bdf5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.signup .signupContainer {
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+.signup .signupContainer .logo {
+    height: 160px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.signup .signupContainer .logoContainer h2 {
+    padding: 10px;
+}
+
+.signup .signupContainer .logoContainer p {
+    font-size: 17px;
+    color: rgb(102, 102, 102);
+}
+
+.signup .signupContainer .authentication {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup .signupContainer .authentication .google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 70%;
+    height: 20%;
+    background-color: rgb(253, 12, 12);
+    padding: 10px 20px;
+    margin: 35px 0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup .signupContainer .authentication .google span {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.signup .signupContainer .authentication .facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 70%;
+    height: 20%;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.signup .signupContainer .authentication .facebook span {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.signup .signupContainer .signupFooter {
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid black;
+}
+.signup .signupContainer .signupFooter p {
+    margin-top: 15px;
+}
+
+.signup .signupContainer .signupFooter p strong {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 385px) {
+    .signup .signupContainer .authentication .google {
+        width: 75%;
+    }
+
+    .signup .signupContainer .authentication .google span {
+        font-size: 17px;
+    }
+
+    .signup .signupContainer .authentication .facebook {
+        padding-left: 25px;
+        width: 75%;
+    }
+
+    .signup .signupContainer .authentication .facebook span {
+        font-size: 17px;
+    }
+
+}
